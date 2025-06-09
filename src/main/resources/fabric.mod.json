@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "parabta",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "ParaBTA",
+  "description": "Marble's first BTA mod!",
   "authors": [
-    "Turnip Labs"
+    "Certified styrofoam eater"
   ],
   "contact": {
     "homepage": "",
@@ -19,16 +19,16 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"marbles.parabta.ParaBTA"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"marbles.parabta.ParaBTA"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"marbles.parabta.ParaBTA"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"marbles.parabta.ParaBTA"
 		]
 	},
   "mixins": [
