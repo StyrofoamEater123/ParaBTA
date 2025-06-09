@@ -16,14 +16,13 @@ public class ParaBTA implements ModInitializer, RecipeEntrypoint, GameStartEntry
     public static final String MOD_ID = "parabta";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	public static Block mudBricks;
-	public static Block mudPolished;
+
 
     @Override
     public void onInitialize() {
         LOGGER.info("ParaBTA Core initialized.");
 
-
+		new initBasicBlocks().initBlocks();// Calls the initBasicBlocks class, initializing the blocks.
 
     }
 
