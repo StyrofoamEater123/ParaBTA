@@ -9,11 +9,11 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 
 
 public class ExampleMod implements ModInitializer, RecipeEntrypoint, GameStartEntrypoint {
-    public static final String MOD_ID = "examplemod";
+    public static final String MOD_ID = "parabta";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     @Override
     public void onInitialize() {
-        LOGGER.info("ExampleMod initialized.");
+        LOGGER.info("ParaBTA Core initialized.");
     }
 
 	@Override
