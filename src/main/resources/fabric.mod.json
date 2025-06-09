@@ -32,7 +32,7 @@
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "parabta.mixins.json"
   ],
 
   "depends": {
