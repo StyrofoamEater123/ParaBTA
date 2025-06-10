@@ -36,11 +36,30 @@ public class Recipes implements RecipeEntrypoint {
 			.addInput('B', Items.BONE)
 			.create("bone_pile", new ItemStack(InitBasicBlocks.BONE_PILE, 4));
 
-		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //BONE BLOCK RECIPE
+		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //BONE FENCE RECIPE
 			.setShape("PBP","PBP")
 			.addInput('B', Items.BONE)
 			.addInput('P', InitBasicBlocks.BONE_PILE)
 			.create("bone_fence", new ItemStack(InitBasicBlocks.BONE_FENCE, 6));
+
+		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //MUD STAIRS RECIPE
+			.setShape("  M"," MM","MMM")
+			.addInput('M', InitBasicBlocks.MUD_BRICKS)
+			.create("mud_stairs", new ItemStack(InitBasicBlocks.MUD_STAIRS, 6));
+		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //MUD SLAB RECIPE
+			.setShape("MMM")
+			.addInput('M', InitBasicBlocks.MUD_BRICKS)
+			.create("mud_slab", new ItemStack(InitBasicBlocks.MUD_SLAB, 6));
+
+		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //STONE PILLAR RECIPE
+			.setShape("S","S","S")
+			.addInput('S', Blocks.STONE_POLISHED)
+			.create("stone_pillar", new ItemStack(InitBasicBlocks.STONE_PILLAR, 3));
+		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //STONE Fence RECIPE
+			.setShape("SCS","SCS")
+			.addInput('S', Blocks.STONE_POLISHED)
+			.addInput('C', Blocks.COBBLE_STONE)
+			.create("stone_fence", new ItemStack(InitBasicBlocks.STONE_FENCE, 6));
 	}
 
 	@Override
