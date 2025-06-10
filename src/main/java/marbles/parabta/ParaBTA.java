@@ -13,7 +13,7 @@ import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
 import net.fabricmc.api.ClientModInitializer;
 
-public class ParaBTA implements ModInitializer, RecipeEntrypoint, GameStartEntrypoint, ClientModInitializer {
+public class ParaBTA implements ModInitializer, RecipeEntrypoint, GameStartEntrypoint, ClientModInitializer{
     public static final String MOD_ID = "parabta";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
@@ -51,6 +51,4 @@ public class ParaBTA implements ModInitializer, RecipeEntrypoint, GameStartEntry
 	public void onInitializeClient() {
 		new blockModels();
 	}
-
-
 }
