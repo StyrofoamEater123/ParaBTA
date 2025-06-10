@@ -60,6 +60,13 @@ public class Recipes implements RecipeEntrypoint {
 			.addInput('S', Blocks.STONE_POLISHED)
 			.addInput('C', Blocks.COBBLE_STONE)
 			.create("stone_fence", new ItemStack(InitBasicBlocks.STONE_FENCE, 6));
+
+
+		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //Glowstone Torch RECIPE
+			.setShape("G","S")
+			.addInput('S', Items.STICK)
+			.addInput('G', Items.DUST_GLOWSTONE)
+			.create("glowstone_torch", new ItemStack(InitBasicBlocks.TORCH_GLOWSTONE, 4));
 	}
 
 	@Override

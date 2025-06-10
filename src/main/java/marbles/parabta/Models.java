@@ -33,6 +33,9 @@ public class Models implements ModelEntrypoint{
 			.setTex(0,"parabta:block/mud_bricks", Side.sides));
 		ModelHelper.setBlockModel(InitBasicBlocks.MUD_SLAB, () -> new BlockModelSlab(InitBasicBlocks.MUD_SLAB)
 			.setTex(0,"parabta:block/mud_bricks", Side.sides));
+
+		ModelHelper.setBlockModel(InitBasicBlocks.TORCH_GLOWSTONE, () -> new BlockModelTorch(InitBasicBlocks.TORCH_GLOWSTONE)
+			.setTex(0,"parabta:block/torches/torch_glowstone", Side.sides));
 	}
 
 	@Override
