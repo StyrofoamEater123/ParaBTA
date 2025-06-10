@@ -19,16 +19,20 @@ public class Models implements ModelEntrypoint{
 		ModelHelper.setBlockModel(InitBasicBlocks.MUD_BRICKS, () -> new BlockModelStandard(InitBasicBlocks.MUD_BRICKS)
 			.setTex(0,"parabta:block/mud_bricks", Side.sides));
 
+		ModelHelper.setBlockModel(InitBasicBlocks.BONE_PILE, () -> new BlockModelStandard(InitBasicBlocks.BONE_PILE)
+			.setTex(0,"parabta:block/bonepile", Side.sides));
+
+		ModelHelper.setBlockModel(InitBasicBlocks.BONE_FENCE, () -> new BlockModelFence(InitBasicBlocks.BONE_FENCE)
+			.setTex(0,"parabta:block/bone_fence", Side.sides));
+
 	}
 
 	@Override
 	public void initItemModels(ItemModelDispatcher dispatcher) {
-		// If you're not doing anything with item models, just leave it empty.
 	}
 
 	@Override
 	public void initEntityModels(EntityRenderDispatcher dispatcher) {
-		// If you don't need to do anything with entity models, just leave it empty.
 	}
 
 	@Override

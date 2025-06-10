@@ -30,6 +30,17 @@ public class Recipes implements RecipeEntrypoint {
 			.setShape("M","M")
 			.addInput('M', Blocks.MUD_BAKED)
 			.create("baked_mud_polished", new ItemStack(InitBasicBlocks.MUD_POLISHED, 2));
+
+		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //BONE BLOCK RECIPE
+			.setShape("BB","BB")
+			.addInput('B', Items.BONE)
+			.create("bone_pile", new ItemStack(InitBasicBlocks.BONE_PILE, 4));
+
+		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //BONE BLOCK RECIPE
+			.setShape("PBP","PBP")
+			.addInput('B', Items.BONE)
+			.addInput('P', InitBasicBlocks.BONE_PILE)
+			.create("bone_fence", new ItemStack(InitBasicBlocks.BONE_FENCE, 6));
 	}
 
 	@Override
