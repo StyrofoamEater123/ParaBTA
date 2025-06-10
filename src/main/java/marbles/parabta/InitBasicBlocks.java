@@ -25,7 +25,8 @@ public class InitBasicBlocks {
 			.setBlockItem(ItemBlock::new)
 			.setTags(BlockTags.MINEABLE_BY_PICKAXE);
 
-		MUD_POLISHED = weakStoneBuilder.build("mud.polished", "polished_baked_mud", 2001, b -> new BlockLogic(MUD_POLISHED, Material.stone));
+		MUD_POLISHED = weakStoneBuilder.build("mud.polished", "baked_mud_polished", 2001, b -> new BlockLogic(MUD_POLISHED, Material.stone));
+		MUD_BRICKS = weakStoneBuilder.build("mud.bricks", "baked_mud_bricks", 2002, b -> new BlockLogic(MUD_BRICKS, Material.stone));
 
 	}
 }

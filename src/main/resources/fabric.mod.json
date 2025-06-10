@@ -29,6 +29,12 @@
 		],
 		"recipesReady": [
 			"marbles.parabta.ParaBTA"
+		],
+		"recipesReady": [
+			"marbles.parabta.Recipes"
+		],
+		"initModels": [
+			"marbles.parabta.Models"
 		]
 	},
   "mixins": [

@@ -43,6 +43,6 @@ public class ParaBTA implements ModInitializer, RecipeEntrypoint, GameStartEntry
 
 	@Override
 	public void onInitializeClient() {
-		new BlockModels();
+		new Models();
 	}
 }
