@@ -3,14 +3,12 @@ package marbles.parabta;
 import net.minecraft.core.block.*;
 import net.minecraft.core.block.tag.BlockTags;
 import net.minecraft.core.sound.BlockSounds;
-import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.block.ItemBlock;
 import turniplabs.halplibe.helper.BlockBuilder;
-import turniplabs.halplibe.helper.CreativeHelper;
 
 import net.minecraft.core.block.material.Material;
 
-public class initBasicBlocks {
+public class InitBasicBlocks {
 
 	public static Block <?> MUD_BRICKS;
 	public static Block <?> MUD_POLISHED;

@@ -1,14 +1,8 @@
 package marbles.parabta;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.client.render.block.model.BlockModelTorch;
-import net.minecraft.core.block.Block;
-import net.minecraft.core.block.BlockLogic;
-import net.minecraft.core.block.BlockLogicTorch;
-import net.minecraft.core.block.material.Material;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import turniplabs.halplibe.helper.BlockBuilder;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
 import net.fabricmc.api.ClientModInitializer;
@@ -23,7 +17,7 @@ public class ParaBTA implements ModInitializer, RecipeEntrypoint, GameStartEntry
     public void onInitialize() {
         LOGGER.info("ParaBTA Core initialized.");
 
-		new initBasicBlocks().initBlocks();// Calls the initBasicBlocks class, initializing the blocks.
+		new InitBasicBlocks().initBlocks();// Calls the initBasicBlocks class, initializing the blocks.
 
     }
 
@@ -49,6 +43,6 @@ public class ParaBTA implements ModInitializer, RecipeEntrypoint, GameStartEntry
 
 	@Override
 	public void onInitializeClient() {
-		new blockModels();
+		new BlockModels();
 	}
 }
