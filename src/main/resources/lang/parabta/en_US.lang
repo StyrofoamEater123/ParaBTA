@@ -1,14 +1,24 @@
 tile.parabta.mud.polished.name=Baked Mud Tile
+tile.parabta.mud.polished.desc=A polished block of fired mud.
 tile.parabta.mud.bricks.name=Baked Mud Bricks
+tile.parabta.mud.bricks.desc=Bricks made of fired mud.
 tile.parabta.mud.stairs.name=Baked Mud Brick Stairs
+tile.parabta.mud.stairs.desc=Stairs made of fired mud.
 tile.parabta.mud.slab.name=Baked Mud Brick Slab
+tile.parabta.mud.slab.desc=A slab of fired mud.
 
 tile.parabta.bone.pile.name=Bone Pile
+tile.parabta.bone.pile.desc=Assorted bones packed into a block.
 tile.parabta.bone.fence.name=Bone Fence
+tile.parabta.bone.fence.desc=A fence made of real bone.
 
 tile.parabta.stone.pillar.name=Stone Pillar
+tile.parabta.stone.pillar.desc=A sturdy polished stone pillar.
 tile.parabta.stone.fence.name=Stone Fence
+tile.parabta.stone.fence.desc=A fence made of stone.
 
 tile.parabta.glowstone.torch.name=Glowstone Torch
+tile.parabta.glowstone.torch.desc=A glowstone crystal that can be mounted to floors and walls.
 tile.parabta.bone.torch.name=Bone Torch
+tile.parabta.bone.torch.desc=A torch with made of bone with a... blue flame?
 
