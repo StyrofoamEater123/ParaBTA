@@ -67,6 +67,11 @@ public class Recipes implements RecipeEntrypoint {
 			.addInput('S', Items.STICK)
 			.addInput('G', Items.DUST_GLOWSTONE)
 			.create("glowstone_torch", new ItemStack(InitBasicBlocks.TORCH_GLOWSTONE, 4));
+		RecipeBuilder.Shaped(ParaBTA.MOD_ID) //Glowstone Torch RECIPE
+			.setShape("C","B")
+			.addInput('B', Items.BONE)
+			.addInput('C', Items.COAL)
+			.create("glowstone_torch", new ItemStack(InitBasicBlocks.TORCH_BONE, 4));
 	}
 
 	@Override

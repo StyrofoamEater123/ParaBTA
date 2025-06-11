@@ -36,6 +36,8 @@ public class Models implements ModelEntrypoint{
 
 		ModelHelper.setBlockModel(InitBasicBlocks.TORCH_GLOWSTONE, () -> new BlockModelTorch(InitBasicBlocks.TORCH_GLOWSTONE)
 			.setTex(0,"parabta:block/torches/torch_glowstone", Side.sides));
+		ModelHelper.setBlockModel(InitBasicBlocks.TORCH_BONE, () -> new BlockModelTorch(InitBasicBlocks.TORCH_BONE)
+			.setTex(0,"parabta:block/torches/torch_bone", Side.sides));
 	}
 
 	@Override

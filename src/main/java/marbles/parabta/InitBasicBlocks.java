@@ -23,6 +23,7 @@ public class InitBasicBlocks {
 	public static Block <?> STONE_FENCE;
 
 	public static Block <?> TORCH_GLOWSTONE;
+	public static Block <?> TORCH_BONE;
 
 
 
@@ -73,6 +74,14 @@ public class InitBasicBlocks {
 			.setLightOpacity(0)
 			.setLuminance(15)
 			.setTags();
+		BlockBuilder stoneTorchBuilder = new BlockBuilder(ParaBTA.MOD_ID)
+			.setBlockSound(BlockSounds.STONE)
+			.setHardness(0.0F)
+			.setResistance(0.0F)
+			.setBlockItem(ItemBlock::new)
+			.setLightOpacity(0)
+			.setLuminance(15)
+			.setTags();
 
 		MUD_POLISHED = weakStoneBuilder.build("mud.polished", "baked_mud_polished", 2301, b ->
 			new BlockLogic(MUD_POLISHED, Material.stone));
@@ -98,6 +107,8 @@ public class InitBasicBlocks {
 
 		TORCH_GLOWSTONE = glassTorchBuilder.build("glowstone.torch", "glowstone_torch", 2309, b ->
 			new BlockLogicSparkleTorch(TORCH_GLOWSTONE));
+		TORCH_BONE = stoneTorchBuilder.build("bone.torch", "bone_torch", 2310, b ->
+			new BlockLogicBlueTorch(TORCH_BONE));
 
 
 	}
