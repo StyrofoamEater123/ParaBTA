@@ -12,6 +12,7 @@ import net.minecraft.core.block.material.Material;
 
 public class InitBasicBlocks {
 
+
 	public static Block <?> MUD_BRICKS;
 	public static Block <?> MUD_POLISHED;
 	public static Block <?> MUD_STAIRS;
@@ -21,6 +22,7 @@ public class InitBasicBlocks {
 	public static Block <?> BONE_FENCE;
 	public static Block <?> STONE_PILLAR;
 	public static Block <?> STONE_FENCE;
+	public static Block <?> STONE_DOOR;
 
 	public static Block <?> TORCH_GLOWSTONE;
 	public static Block <?> TORCH_BONE;
@@ -46,8 +48,8 @@ public class InitBasicBlocks {
 
 		BlockBuilder stoneTransBuilder = new BlockBuilder(ParaBTA.MOD_ID) //Makes a BlockBuilder type for non-solid stone blocks..
 			.setBlockSound(BlockSounds.STONE)
-			.setHardness(0.5F)
-			.setResistance(5.0F)
+			.setHardness(1.0F)
+			.setResistance(10.0F)
 			.setBlockItem(ItemBlock::new)
 			.setLightOpacity(0)
 			.setTags(BlockTags.MINEABLE_BY_PICKAXE);
@@ -105,9 +107,11 @@ public class InitBasicBlocks {
 		STONE_FENCE = stoneFenceBuilder.build("stone.fence", "stone_fence", 2308, b ->
 			new BlockLogicFence(STONE_FENCE));
 
-		TORCH_GLOWSTONE = glassTorchBuilder.build("glowstone.torch", "glowstone_torch", 2309, b ->
+		//STONE_DOOR = stoneDoorBuilder.build("stone.door","stone_door",2309, b -> new BlockLogicDoor(STONE_DOOR));
+
+		TORCH_GLOWSTONE = glassTorchBuilder.build("glowstone.torch", "glowstone_torch", 2310, b ->
 			new BlockLogicSparkleTorch(TORCH_GLOWSTONE));
-		TORCH_BONE = stoneTorchBuilder.build("bone.torch", "bone_torch", 2310, b ->
+		TORCH_BONE = stoneTorchBuilder.build("bone.torch", "bone_torch", 2311, b ->
 			new BlockLogicBlueTorch(TORCH_BONE));
 
 
